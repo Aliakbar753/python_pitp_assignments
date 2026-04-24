@@ -1,22 +1,11 @@
-class Dog:
+import Animal
+class Dog(Animal.Animal):
 
-    name = 'tommy'
-    color = 'black'
+    def fetch(self):
+        print(f"{self.Name} is fetching")
 
-    def eating(dog):
-        print('Dog can eat')
 
-    def barking(dog):
-        print("dog can bark ")
-
-    def sleap(dog):
-        print("dog can sleep")
-
-dog = Dog()
-
-# print(dog.name)
-# print(dog.color)
-
-dog.eating()
-dog.barking()
-dog.sleap() 
+dog = Dog("Buddy")
+dog.sound()
+dog.eat()
+dog.fetch()
